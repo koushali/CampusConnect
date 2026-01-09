@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Welcome, {{ user }}</h2>
+
+    <ul>
+        <li><a href="/marks?user={{ user }}">View Marks</a></li>
+        <li><a href="/discussion">Discussion Board</a></li>
+        <li><a href="/admin">Admin Panel</a></li>
+    </ul>
+</div>
+</body>
+</html>

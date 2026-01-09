@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CampusConnect – Discussion Board</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Discussion Board</h2>
+
+    <p>
+        This section allows students to post queries, feedback, or comments.
+        The submitted content is stored and displayed to all users.
+    </p>
+
+    <form method="POST" action="/discussion">
+        <label>Username</label>
+        <input type="text" name="username" placeholder="Enter your name">
+
+        <label>Message</label>
+        <textarea name="message" placeholder="Enter your message"></textarea>
+
+        <input type="submit" value="Post Message">
+    </form>
+
+    <hr>
+
+    <h3>Posted Messages</h3>
+
+    {% for c in comments %}
+        <div class="comment">
+            <b>{{ c[1] }}:</b>
+            {{ c[2] }}
+        </div>
+    {% endfor %}
+
+    <p class="s emnote">
+        Note: User input is displayed without sanitization, making this page
+        vulnerable to Stored Cross-Site Scripting (XSS).
+    </p>
+</div>
+
+</body>
+</html>

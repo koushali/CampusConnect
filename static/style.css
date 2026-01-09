@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to right, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 420px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+h2 {
+    text-align: center;
+    color: #243b55;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background: #243b55;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background: #141e30;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li a {
+    display: block;
+    background: #243b55;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #243b55;
+    color: white;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.comment {
+    background: #f1f1f1;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.note {
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}

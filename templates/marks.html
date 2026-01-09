@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CampusConnect – Academic Marks</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Academic Performance</h2>
+
+    <p>
+        The table below displays the academic marks associated with the user:
+        <b>{{ user }}</b>
+    </p>
+
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+
+        {% for row in marks %}
+        <tr>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <p class="note">
+        This data is fetched directly from the database without input validation,
+        making it vulnerable to SQL Injection.
+    </p>
+</div>
+
+</body>
+</html>

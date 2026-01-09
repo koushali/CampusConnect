@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Student Login</h2>
+
+    <form method="POST" action="/login" onsubmit="return validateLogin()">
+        <label>Username</label>
+        <input type="text" id="username" name="username">
+
+        <label>Password</label>
+        <input type="password" id="password" name="password">
+
+        <input type="submit" value="Login">
+    </form>
+
+    <p class="note">Intentionally vulnerable application</p>
+</div>
+</body>
+</html>
